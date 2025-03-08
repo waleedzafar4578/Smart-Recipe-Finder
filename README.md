@@ -62,6 +62,7 @@ Smart Recipe Finder solves the common problem of deciding what to cook based on 
 - **React Navigation** - Screen management
 
 ## 📁 Project Structure
+```
 smart-recipe-finder/
 │── backend/ # Flask Backend
 │ ├── app.py # Main Flask API
