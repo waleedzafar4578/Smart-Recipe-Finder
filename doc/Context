@@ -1,0 +1,104 @@
+Smart Recipe Finder - Project Context
+
+Overview
+
+Smart Recipe Finder is a web and mobile application that helps users find recipes based on the ingredients they have. The system uses Flask for the backend, React for the frontend, and will later be expanded into a React Native mobile application.
+
+Problem Statement
+
+Many people struggle with deciding what to cook based on available ingredients. This application solves that problem by providing recipe recommendations based on user-inputted ingredients.
+
+Solution
+
+Users enter the ingredients they have.
+
+The app suggests recipes based on those ingredients.
+
+Optional AI-generated unique recipes.
+
+Users can save their favorite recipes.
+
+Additional features like filters, nutrition details, and step-by-step instructions.
+
+Tech Stack
+
+Backend (Python + Flask)
+
+Flask (for REST API)
+
+Spoonacular API (for recipes)
+
+OpenAI API (for AI-generated recipes, optional)
+
+PostgreSQL/MongoDB (for storing user data)
+
+JWT Authentication (for user authentication, optional)
+
+Frontend (React)
+
+React.js (for web UI)
+
+Material UI (or plain CSS for styling)
+
+Axios (for API requests)
+
+Redux (optional for state management)
+
+Mobile App (React Native) - Future Implementation
+
+React Native (for cross-platform mobile development)
+
+Expo (for easier development and testing)
+
+React Navigation (for managing app screens)
+
+Camera API (for future image-based ingredient detection feature)
+
+Core Features
+
+Ingredient-Based Recipe Search - Users input available ingredients, and the system suggests recipes.
+
+Recipe Details - Step-by-step cooking instructions, cooking time, and nutrition facts.
+
+Filters - Users can filter by cuisine, meal type, and dietary preferences.
+
+Save Recipes - Users can save their favorite recipes for later.
+
+Future Features
+
+Image-based ingredient detection using Google Vision API.
+
+Voice input for entering ingredients.
+
+AI-powered personalized recipe recommendations.
+
+Folder Structure
+smart-recipe-finder/
+│── backend/              # Flask Backend
+│   ├── app.py           # Main Flask API
+│   ├── models.py        # Database models
+│   ├── routes.py        # API routes
+│   ├── utils.py         # Helper functions
+│   ├── requirements.txt # Dependencies
+│   ├── .env             # API keys & secrets
+│── frontend/             # React Frontend
+│   ├── src/
+│   │   ├── components/  # Reusable UI components
+│   │   ├── pages/       # Main pages (Home, Recipe, etc.)
+│   │   ├── services/    # API calls
+│   │   ├── App.js
+│   │   ├── index.js
+│   ├── package.json
+│── mobile/               # React Native Mobile App (Later)
+│   ├── src/
+│   │   ├── components/   # Reusable UI components
+│   │   ├── screens/      # App screens (Home, Recipe, etc.)
+│   │   ├── navigation/   # Navigation setup
+│   │   ├── services/     # API calls
+│   │   ├── App.js        # Main entry file
+│   │   ├── index.js      # Index file
+│   ├── package.json      # Dependencies
+│   ├── app.json          # Expo configuration
+│   ├── .env              # API keys & secrets
+│── README.md             # Project documentation
+
